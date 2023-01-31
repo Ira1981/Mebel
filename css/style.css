@@ -1,0 +1,238 @@
+/* Mebel */
+
+/******** (УДАЛИТЬ) ********/
+
+.test {
+    display: table-cell;
+    font-size: 2em;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/******** COLOR ********/
+
+:root {
+    /* light */
+    --w1: #FFFFFF;
+    --w2: #FFFFF0;
+    --w3: #F8ECDB;
+    --w4: #F8E8D1;
+    --w5: #F0DCBE;
+    /* golden */
+    --g1: #F8D7B3;
+    --g2: #F8CB9A;
+    --g3: #F0B677;
+    --g4: #B49370;
+    --g5: #9C6427;
+    --g6: #4D220E;
+    /* dark */    
+    --d1: #939393;
+    --d2: #282828;
+    --d3: #1E1E1E;
+    --d4: #1A0D0D;
+    --d5: #000000;
+}
+
+/******** TEXT ********/
+
+h1 {
+    color: var(--w2);
+}
+
+h2 {
+    color: var(--w3);
+}
+
+h3 {
+    color: var(--w4);
+}
+
+.special {
+    color: var(--g3);
+}
+
+/******** STRUCTURE ********/
+
+body {
+    background-color: var(--d5);
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+/*
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-family: 'Verdana', Geneva, sans-serif;
+*/
+header {
+    background-color: var(--d5);
+    color: var(--w2);
+}
+
+section {
+    padding: 2em;
+}
+
+article {
+    padding: 1.5em;
+}
+
+footer {
+    background-color: var(--d4);
+    color: var(--w2);
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.inserted {
+    border-radius: 2em;
+}
+
+/******** INTRO ********/
+
+.intro {
+    background-color: var(--d3);
+    color: var(--w2);
+}
+
+.intro h2 {
+    color: var(--w2);
+}
+
+.intro .special {
+    color: var(--g3);
+}
+
+/******** ORDER ********/
+
+.order {
+    background-color: var(--g2);
+    color: var(--d2);
+}
+
+.order h2 {
+    color: var(--d2);
+}
+
+.order .special {
+    color: var(--g5);
+}
+
+/******** EXAMPLES ********/
+
+.examples {
+    background-color: var(--d3);
+    color: var(--w2);
+}
+
+/******** CHOICE ********/
+
+.choice {
+    background-color: var(--w1);
+    color: var(--d2);
+}
+
+/******** FAQ ********/
+
+.faq {
+    background-color: var(--d3);
+    color: var(--w2);
+}
+
+/******** RECALL ********/
+
+.recall {
+    border-radius: 2em;
+    background-color: var(--g2);
+    color: var(--d2);
+}
+
+/******** INTERFACE ********/
+
+a.button {
+    display: inline-block;
+    padding: 1em 2em;
+    background: var(--g2);
+    border: 1px solid var(--g5);
+    border-radius: 8px;
+    box-shadow:
+        0 4px var(--g5),
+        0 3px 16px var(--g4);
+    text-decoration: none;
+    user-select: none;
+    font-weight: bold;
+    color: var(--w1);
+    text-shadow: 0 1px var(--d4);
+    transition: .2s;
+}
+
+.button:hover {
+    background: var(--g1);
+}
+
+.button:active {
+    background: var(--g3);
+    box-shadow:
+        0 2px var(--g5),
+        0 1px 8px var(--g4);
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 2px);
+}
+
+/******** CANVAS ********/
+
+canvas {
+    border: 1px solid #7B899B;
+}
+
+.tool {
+    padding: 2px;
+    border: 2px solid #F2F7FE;
+}
+
+.tool:hover {
+    border: 2px groove #E4F0FE;
+    background: white;
+}
+
+.Selected {
+    border: 2px groove #E4F0FE;
+}
+
+.Toolbar {
+    float: left;
+    font-family: 'Trebuchet MS'; 
+    font-size: 14px;
+    font-variant: small-caps;
+    text-align: center;
+    background: #F2F7FE;
+    padding: 10px 15px 3px 10px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border: 1px solid #7B899B;
+}
+
+.Toolbar button {
+    padding: 6px;
+    margin: 7px 2px;
+    font-variant: normal;
+    font-size: 12px;
+}
+
+.CanvasContainer {
+    clear: both;
+}
+
+#savedCopyContainer {
+    display: none;
+}
+
+#savedCopyContainer img {
+    width: 250px;
+    height: 150px;
+}
